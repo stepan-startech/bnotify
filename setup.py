@@ -13,7 +13,8 @@ with io.open("bnotify/__init__.py", "rt", encoding="utf8") as f:
     VERSION = re.search(r"__version__ = \"(.*?)\"", f.read()).group(1)
 
 INSTALL_REQUIRES = [
-    "pymongo==3.11.4"
+    "pymongo>=3.2.2,<4.0",
+    "requests>=2.0.0"
 ]
 
 EXTRAS_REQUIRE = {
@@ -49,7 +50,7 @@ setup(
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: BSD License",
+        "License :: BSD License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.8",
