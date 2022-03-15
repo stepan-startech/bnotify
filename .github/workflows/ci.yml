@@ -13,9 +13,6 @@ jobs:
           - { name: '3.10', python: '3.10', os: ubuntu-latest, tox: py310, mongodb: '4.4'}
           - { name: '3.9', python: '3.9', os: ubuntu-latest, tox: py39, mongodb: '4.4'}
           - { name: '3.8', python: '3.8', os: ubuntu-latest, tox: py38, mongodb: '4.4'}
-          - { name: '3.7', python: '3.7', os: ubuntu-latest, tox: py37, mongodb: '4.4'}
-          - { name: 'PyPy', python: 'pypy-3.7', os: ubuntu-latest, tox: pypy37, mongodb: '4.4'}
-
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
@@ -30,7 +27,7 @@ jobs:
           python -VV
           python -m site
           python -m pip install --upgrade pip setuptools wheel
-          python -m pip install --upgrade virtualenv tox tox-gh-actions
+          python -m pip install --upgrade virtualenv==20.0.20 tox==3.14.6 tox-gh-actions
       - name: Start mongo ${{ matrix.mongodb-version }}
         run: |
           mongo eve_test --eval 'db.createUser({user:"test_user", pwd:"test_pw", roles:["readWrite"]});'
