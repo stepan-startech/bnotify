@@ -15,6 +15,11 @@ from typing import Optional, Callable
 from pymongo import MongoClient
 
 from bnotify.task import TaskList, TaskThread, Task
+from bnotify.telegram import Message, DocumentMessage, Document
+
+Message = Message
+Document = Document
+DocumentMessage = DocumentMessage
 
 class BotNotifier:
     """
