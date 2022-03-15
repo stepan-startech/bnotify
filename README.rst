@@ -15,6 +15,14 @@ bnotify
 Bnotify is an open source Python telegram bots notifications module designed for humans. It
 allows to provide regular notifications to your telegram bot. Bnotify offers native support for MongoDB.
 
+How to install
+-------------
+
+.. code-block:: bash
+
+    python3 setup.py install --user
+
+
 Bnotify is Simple
 -------------
 .. code-block:: python
