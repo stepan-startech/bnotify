@@ -14,7 +14,8 @@ with io.open("bnotify/__init__.py", "rt", encoding="utf8") as f:
 
 INSTALL_REQUIRES = [
     "pymongo>=3.2.2,<4.0",
-    "requests>=2.0.0"
+    "requests>=2.0.0",
+    "pydantic>=1.0"
 ]
 
 EXTRAS_REQUIRE = {

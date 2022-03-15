@@ -1,4 +1,9 @@
-from dataclasses import dataclass
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+    from dataclasses import dataclass
+else:
+    from pydantic.dataclasses import dataclass
+
 from threading import Thread
 from time import sleep
 from typing import Callable, Union
