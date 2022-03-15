@@ -37,7 +37,8 @@ Tasks are now alive and ready to send messages.
 
 To make notifications more functional, you can connect to your API or database to retrieve users information.
 Make sure that the way you use data storages is thread-safe.
-Bnotify comes with native THREAD-SAFE support for mongodb:
+Bnotify comes with native thread-safe support for mongodb:
+
 .. code-block:: python
 
     from bnotify import BotNotifier, Message
@@ -71,18 +72,6 @@ Features
 * Operations Log
 * MongoDB Support
 
-Funding
--------
-Eve REST framework is an open source, collaboratively funded project. If you run
-a business and are using Eve in a revenue-generating product, it would make
-business sense to sponsor Eve development: it ensures the project that your
-product relies on stays healthy and actively maintained. Individual users are
-also welcome to make a recurring pledge or a one time donation if Eve has
-helped you in your work or personal projects.
-
-Every single sign-up makes a significant impact towards making Eve possible. To
-learn more, check out our `funding page`_.
-
 License
 -------
 Bnotify is a `Stepan Starovoitov`_ open source project,
@@ -90,4 +79,3 @@ distributed under the `BSD license
 <https://github.com/startech-live/bnotify/blob/master/LICENSE>`_.
 
 .. _`Stepan Starovoitov`: https://starovoitov.startech.live
-.. _`funding page`: https://bnotify.startech.live/funding.html
